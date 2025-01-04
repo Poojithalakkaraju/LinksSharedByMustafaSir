@@ -1,0 +1,3 @@
+Practical Work: https://devops-cicd.hashnode.dev/the-power-of-the-master-slave-architecture
+
+use the above blog for practice

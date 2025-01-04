@@ -1,0 +1,4 @@
+Intro: https://devops-cicd.hashnode.dev/introducing-the-power-of-pipelines-in-jenkins
+Practical Work: https://devops-cicd.hashnode.dev/how-to-write-your-first-pipeline-in-jenkinsfile
+
+use the above blog for practice
