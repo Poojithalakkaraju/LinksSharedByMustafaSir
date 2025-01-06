@@ -16,3 +16,31 @@ https://dlcdn.apache.org/tomcat/tomcat-9/
 
 https://hashnode.com/@mustafashaik
 ===========================================
+
+
+pipeline syntax::
+
+pipeline {
+    agent any
+    tools {
+        maven "MyMaven"
+    }
+    stages {
+        stage('Code') {
+            steps {
+                git 'https://github.com/Poojithalakkaraju/one.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        stage('Deploy') {
+            steps {
+               deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://107.22.29.136:8080')], contextPath: 'MyTomcatApp', war: 'target/*.war'
+            }
+        }
+    }
+}
+
