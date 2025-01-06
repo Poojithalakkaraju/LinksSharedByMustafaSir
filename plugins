@@ -1,3 +1,5 @@
 pipeleine stage view - should be installed for user interface  (Go to Dashboard - manage plugins - available plugins - search for pipeline stage view)
 
 deploy to container - (Go to Dashboard - manage plugins - search for  deploy to Container)
+
+nexus artifact uploader - (Go to Dashboard - manage plugins - search for nexus artifact uploader)
