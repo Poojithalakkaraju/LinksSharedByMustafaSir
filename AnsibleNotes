@@ -34,3 +34,21 @@
 
 
 ...
+
+
+==> short cut to install tomcat through scripts using playbook
+
+---
+- hosts: dev
+  connection: ssh
+
+  tasks:
+    - name: installing tomcat
+      src: "/root/tomcat.sh"
+      dest: "/root"
+      mode : 777
+
+    - name: executing script
+      shell: nohup /root/tomcat.sh
+
+...
